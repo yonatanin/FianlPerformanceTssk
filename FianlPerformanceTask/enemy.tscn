@@ -3,13 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_ch4cg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3fx4"]
-size = Vector2(789, 1083)
+size = Vector2(160, 202)
 
 [node name="enemy" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(228, 144)
+scale = Vector2(0.194656, 0.169616)
 texture = ExtResource("1_ch4cg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2.5, 6.5)
+position = Vector2(229, 146)
 shape = SubResource("RectangleShape2D_d3fx4")
+one_way_collision_margin = 0.0
